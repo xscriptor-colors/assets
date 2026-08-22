@@ -1,0 +1,122 @@
+{
+  "X": {
+    "background": "#050505",
+    "foreground": "#f7f1ff",
+    "color4": "#fd9353",
+    "color5": "#948ae3",
+    "color2": "#7bd88f",
+    "color1": "#fc618d",
+    "color3": "#fce566",
+    "color6": "#5ad4e6"
+  },
+  "Madrid": {
+    "background": "#fafafa",
+    "foreground": "#1a1a1a",
+    "color4": "#007a9e",
+    "color5": "#4d2699",
+    "color2": "#007a28",
+    "color1": "#990026",
+    "color3": "#8a6408",
+    "color6": "#007a9e"
+  },
+  "Lahabana": {
+    "background": "#19191a",
+    "foreground": "#f7f1ff",
+    "color4": "#fd9353",
+    "color5": "#948ae3",
+    "color2": "#7bd88f",
+    "color1": "#fc618d",
+    "color3": "#e5ff9d",
+    "color6": "#5ad4e6"
+  },
+  "Miami": {
+    "background": "#000000",
+    "foreground": "#f7f1ff",
+    "color4": "#00ffa8",
+    "color5": "#d36cff",
+    "color2": "#7fffd4",
+    "color1": "#ff4c8b",
+    "color3": "#ffd84c",
+    "color6": "#47cfff"
+  },
+  "Paris": {
+    "background": "#1a0a30",
+    "foreground": "#f7f1ff",
+    "color4": "#a3f3ff",
+    "color5": "#c4bdff",
+    "color2": "#7bd88f",
+    "color1": "#fc618d",
+    "color3": "#fce566",
+    "color6": "#a3f3ff"
+  },
+  "Tokio": {
+    "background": "#1c1c1d",
+    "foreground": "#f7f1ff",
+    "color4": "#fd9353",
+    "color5": "#948ae3",
+    "color2": "#7bd88f",
+    "color1": "#fc618d",
+    "color3": "#fce566",
+    "color6": "#5ad4e6"
+  },
+  "Oslo": {
+    "background": "#3f4451",
+    "foreground": "#abb2bf",
+    "color4": "#4aa5f0",
+    "color5": "#c162de",
+    "color2": "#8cc265",
+    "color1": "#e05561",
+    "color3": "#d18f52",
+    "color6": "#42b3c2"
+  },
+  "Helsinki": {
+    "background": "#f8fafe",
+    "foreground": "#544d40",
+    "color4": "#b55a0f",
+    "color5": "#3e9d21",
+    "color2": "#733d9a",
+    "color1": "#1faa9e",
+    "color3": "#2e70ad",
+    "color6": "#bd4c3d"
+  },
+  "Berlin": {
+    "background": "#000000",
+    "foreground": "#cccccc",
+    "color4": "#888888",
+    "color5": "#aaaaaa",
+    "color2": "#bbbbbb",
+    "color1": "#999999",
+    "color3": "#dddddd",
+    "color6": "#cccccc"
+  },
+  "London": {
+    "background": "#ffffff",
+    "foreground": "#333333",
+    "color4": "#666666",
+    "color5": "#777777",
+    "color2": "#444444",
+    "color1": "#333333",
+    "color3": "#555555",
+    "color6": "#888888"
+  },
+  "Praha": {
+    "background": "#1a1a1a",
+    "foreground": "#ffffff",
+    "color4": "#bd93f9",
+    "color5": "#ff9aa2",
+    "color2": "#b8e6a0",
+    "color1": "#ff5555",
+    "color3": "#ffe4a3",
+    "color6": "#8be9fd"
+  },
+  "Bogota": {
+    "background": "#200b0a",
+    "foreground": "#f7f1ff",
+    "color4": "#47e6ff",
+    "color5": "#ff9999",
+    "color2": "#7bd88f",
+    "color1": "#fc618d",
+    "color3": "#ffed89",
+    "color6": "#47e6ff"
+  }
+}
