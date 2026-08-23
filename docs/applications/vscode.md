@@ -5,6 +5,21 @@
 
 Palettes of the 12 VS Code themes.
 
+## Fields
+
+Each palette block defines the full color set of a theme:
+
+| Field | Meaning |
+|-------|---------|
+| `color0..color7` | Background, semantic colors (red/green/yellow/orange/purple/blue) and foreground. |
+| `color8..color15` | Bright ANSI terminal variants. |
+| `accent` | Theme identity color — drives buttons (`button.background`), badges, `statusBar.background`, `activityBar.activeBorder`, `tab.activeBorder`, `focusBorder`, `textLink`. **Varies per theme** (not always gold). |
+| `background` | Editor background (`editor.background`). |
+| `foreground` | Terminal foreground (`terminal.foreground`). |
+
+> The `accent` is not part of the 16-color ANSI palette; it was added so themes can be
+> regenerated from scratch keeping their identity color. See [Regenerating themes](#regenerating-themes).
+
 ## Palettes
 
 ### Berlin
@@ -15,10 +30,10 @@ Palettes of the 12 VS Code themes.
     "color1":  "#999999",
     "color2":  "#bbbbbb",
     "color3":  "#dddddd",
-    "color4":  "#888888",
+    "color4":  "#dddddd",
     "color5":  "#aaaaaa",
     "color6":  "#cccccc",
-    "color7":  "#ffffff",
+    "color7":  "#d4d4d4",
     "color8":  "#333333",
     "color9":  "#bbbbbb",
     "color10":  "#dddddd",
@@ -27,20 +42,21 @@ Palettes of the 12 VS Code themes.
     "color13":  "#cccccc",
     "color14":  "#eeeeee",
     "color15":  "#ffffff",
+    "accent":  "#000000",
     "background": "#000000",
-    "foreground": "#d4d4d4"
+    "foreground": "#cccccc"
 }
 ```
 
-### Bogotá
+### Bogota
 
 ```json
 {
-    "color0":  "#222222",
+    "color0":  "#140606",
     "color1":  "#fc618d",
     "color2":  "#7bd88f",
     "color3":  "#ffed89",
-    "color4":  "#47e6ff",
+    "color4":  "#fd9353",
     "color5":  "#ff9999",
     "color6":  "#47e6ff",
     "color7":  "#f7f1ff",
@@ -52,6 +68,7 @@ Palettes of the 12 VS Code themes.
     "color13":  "#ff9999",
     "color14":  "#47e6ff",
     "color15":  "#f7f1ff",
+    "accent":  "#ffed89",
     "background": "#140606",
     "foreground": "#f7f1ff"
 }
@@ -61,14 +78,14 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#c0bbae",
+    "color0":  "#f1efee",
     "color1":  "#1faa9e",
     "color2":  "#733d9a",
     "color3":  "#2e70ad",
-    "color4":  "#b55a0f",
+    "color4":  "#2e70ad",
     "color5":  "#3e9d21",
     "color6":  "#bd4c3d",
-    "color7":  "#191919",
+    "color7":  "#544d40",
     "color8":  "#b0a999",
     "color9":  "#009e91",
     "color10":  "#5a1f8a",
@@ -77,6 +94,7 @@ Palettes of the 12 VS Code themes.
     "color13":  "#218c00",
     "color14":  "#b32e1f",
     "color15":  "#000000",
+    "accent":  "#b2a733",
     "background": "#f1efee",
     "foreground": "#544d40"
 }
@@ -86,7 +104,7 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#363537",
+    "color0":  "#191919",
     "color1":  "#fc618d",
     "color2":  "#7bd88f",
     "color3":  "#e5ff9d",
@@ -102,6 +120,7 @@ Palettes of the 12 VS Code themes.
     "color13":  "#948ae3",
     "color14":  "#5ad4e6",
     "color15":  "#f7f1ff",
+    "accent":  "#e5ff9d",
     "background": "#191919",
     "foreground": "#f7f1ff"
 }
@@ -111,14 +130,14 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#000000",
+    "color0":  "#ffffff",
     "color1":  "#333333",
     "color2":  "#444444",
     "color3":  "#555555",
-    "color4":  "#666666",
+    "color4":  "#555555",
     "color5":  "#777777",
     "color6":  "#888888",
-    "color7":  "#999999",
+    "color7":  "#2b2b2b",
     "color8":  "#333333",
     "color9":  "#444444",
     "color10":  "#555555",
@@ -127,8 +146,9 @@ Palettes of the 12 VS Code themes.
     "color13":  "#888888",
     "color14":  "#999999",
     "color15":  "#aaaaaa",
+    "accent":  "#999999",
     "background": "#ffffff",
-    "foreground": "#2b2b2b"
+    "foreground": "#333333"
 }
 ```
 
@@ -136,13 +156,13 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#333333",
-    "color1":  "#cc0033",
-    "color2":  "#009933",
+    "color0":  "#ffffff",
+    "color1":  "#8b1538",
+    "color2":  "#396342",
     "color3":  "#b8860b",
-    "color4":  "#0099cc",
-    "color5":  "#6633cc",
-    "color6":  "#0099cc",
+    "color4":  "#cc6600",
+    "color5":  "#948ae3",
+    "color6":  "#2980b9",
     "color7":  "#1a1a1a",
     "color8":  "#666666",
     "color9":  "#cc0033",
@@ -152,6 +172,7 @@ Palettes of the 12 VS Code themes.
     "color13":  "#6633cc",
     "color14":  "#0099cc",
     "color15":  "#1a1a1a",
+    "accent":  "#031a99",
     "background": "#ffffff",
     "foreground": "#1a1a1a"
 }
@@ -161,24 +182,25 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#1e1e1e",
-    "color1":  "#ff4c8b",
-    "color2":  "#7fffd4",
-    "color3":  "#ffd84c",
-    "color4":  "#00ffa8",
-    "color5":  "#d36cff",
-    "color6":  "#47cfff",
-    "color7":  "#f7f1ff",
+    "color0":  "#000000",
+    "color1":  "#FF5C8A",
+    "color2":  "#45E8B0",
+    "color3":  "#FFE066",
+    "color4":  "#FF9E64",
+    "color5":  "#C77DFF",
+    "color6":  "#2FD4FF",
+    "color7":  "#F2F0FF",
     "color8":  "#69676c",
-    "color9":  "#ff4c8b",
-    "color10":  "#7fffd4",
-    "color11":  "#ffd84c",
-    "color12":  "#00ffa8",
-    "color13":  "#d36cff",
-    "color14":  "#47cfff",
-    "color15":  "#f7f1ff",
+    "color9":  "#FF5C8A",
+    "color10":  "#45E8B0",
+    "color11":  "#FFE066",
+    "color12":  "#FF9E64",
+    "color13":  "#C77DFF",
+    "color14":  "#2FD4FF",
+    "color15":  "#F2F0FF",
+    "accent":  "#FFE066",
     "background": "#000000",
-    "foreground": "#f7f1ff"
+    "foreground": "#F2F0FF"
 }
 ```
 
@@ -186,14 +208,14 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#3f4451",
+    "color0":  "#181a1f",
     "color1":  "#e05561",
     "color2":  "#8cc265",
     "color3":  "#d18f52",
-    "color4":  "#4aa5f0",
+    "color4":  "#d18f52",
     "color5":  "#c162de",
     "color6":  "#42b3c2",
-    "color7":  "#e6e6e6",
+    "color7":  "#abb2bf",
     "color8":  "#4f5666",
     "color9":  "#ff616e",
     "color10":  "#a5e075",
@@ -202,6 +224,7 @@ Palettes of the 12 VS Code themes.
     "color13":  "#de73ff",
     "color14":  "#4cd1e0",
     "color15":  "#ffffff",
+    "accent":  "#76cce0",
     "background": "#181a1f",
     "foreground": "#abb2bf"
 }
@@ -211,11 +234,11 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#222222",
+    "color0":  "#10081a",
     "color1":  "#fc618d",
     "color2":  "#7bd88f",
     "color3":  "#fce566",
-    "color4":  "#a3f3ff",
+    "color4":  "#fd9353",
     "color5":  "#c4bdff",
     "color6":  "#a3f3ff",
     "color7":  "#f7f1ff",
@@ -227,6 +250,7 @@ Palettes of the 12 VS Code themes.
     "color13":  "#c4bdff",
     "color14":  "#a3f3ff",
     "color15":  "#f7f1ff",
+    "accent":  "#fce566",
     "background": "#10081a",
     "foreground": "#f7f1ff"
 }
@@ -236,24 +260,25 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#1a1a1a",
-    "color1":  "#ff5555",
-    "color2":  "#b8e6a0",
-    "color3":  "#ffe4a3",
-    "color4":  "#bd93f9",
-    "color5":  "#ff9aa2",
-    "color6":  "#8be9fd",
-    "color7":  "#ffffff",
-    "color8":  "#6272a4",
-    "color9":  "#ff6e6e",
-    "color10":  "#b8e6a0",
-    "color11":  "#ffe4a3",
-    "color12":  "#d6acff",
-    "color13":  "#ff9aa2",
-    "color14":  "#a4ffff",
-    "color15":  "#ffffff",
-    "background": "#1a1a1a",
-    "foreground": "#ffffff"
+    "color0":  "#1A1A1A",
+    "color1":  "#FF5555",
+    "color2":  "#B8E6A0",
+    "color3":  "#FFE4A3",
+    "color4":  "#FF9AA2",
+    "color5":  "#BD93F9",
+    "color6":  "#6272A4",
+    "color7":  "#FFFFFF",
+    "color8":  "#6272A4",
+    "color9":  "#FF6E6E",
+    "color10":  "#B8E6A0",
+    "color11":  "#FFE4A3",
+    "color12":  "#D6ACFF",
+    "color13":  "#FF9AA2",
+    "color14":  "#A4FFFF",
+    "color15":  "#FFFFFF",
+    "accent":  "#B8E6A0",
+    "background": "#1A1A1A",
+    "foreground": "#FFFFFF"
 }
 ```
 
@@ -261,7 +286,7 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#363537",
+    "color0":  "#191919",
     "color1":  "#fc618d",
     "color2":  "#7bd88f",
     "color3":  "#fce566",
@@ -277,6 +302,7 @@ Palettes of the 12 VS Code themes.
     "color13":  "#948ae3",
     "color14":  "#5ad4e6",
     "color15":  "#f7f1ff",
+    "accent":  "#fce566",
     "background": "#191919",
     "foreground": "#f7f1ff"
 }
@@ -286,7 +312,7 @@ Palettes of the 12 VS Code themes.
 
 ```json
 {
-    "color0":  "#363537",
+    "color0":  "#0a0a0a",
     "color1":  "#fc618d",
     "color2":  "#7bd88f",
     "color3":  "#fce566",
@@ -302,8 +328,35 @@ Palettes of the 12 VS Code themes.
     "color13":  "#948ae3",
     "color14":  "#5ad4e6",
     "color15":  "#f7f1ff",
+    "accent":  "#fce566",
     "background": "#0a0a0a",
     "foreground": "#f7f1ff"
 }
 ```
 
+## Regenerating themes
+
+The full color themes can be regenerated from these palettes using the script
+[`generate-color-themes.mjs`](https://github.com/xscriptor-colors/vscode/blob/main/labs/xscriptor-themes/scripts/generate-color-themes.mjs)
+inside the `vscode` repository.
+
+Two modes are supported:
+
+**Complete existing themes** (adds any missing keys without touching current values):
+
+```bash
+node labs/xscriptor-themes/scripts/generate-color-themes.mjs
+# outputs → themes/xscriptor-themes/dist/
+```
+
+**Regenerate from scratch using only the palettes** (from `colors.md` or a palette JSON):
+
+```bash
+node labs/xscriptor-themes/scripts/generate-color-themes.mjs --from-palette
+# outputs → themes/xscriptor-themes/dist/palette/
+```
+
+Both outputs live under `dist/`, which is gitignored in the `vscode` repo, so generated
+files are never committed. The `accent` field drives the identity colors (buttons, badges,
+status bar, active borders, links); the remaining palette colors map to `editor.background`,
+`editor.foreground`, `charts.*` and `terminal.ansi*`.
