@@ -1,8 +1,6 @@
-# Palettes — Original (Xassets)
+<h1 align="center">Colors</h1>
 
-Source: [`xassets/colors/colors.md`](https://github.com/xscriptor/xassets/blob/main/colors/colors.md)
-
-**JSON:** [`../palettes/source.json`](../palettes/source.json)
+<em align="left">Base</em>
 
 ### X
 
